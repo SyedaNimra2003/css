@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Document</title>
+    <script src="jq.js"></script>
+    <style>
+        #flip {
+            background-color: rgb(170, 211, 212);
+            color: darkred;
+            padding: 5px;
+            border: 3px groove purple;
+            text-align: center;
+            font-style: oblique;
+        }
+        
+        #panel {
+            background-color: aqua;
+            color: chocolate;
+            padding: 10px;
+            border: 3px groove lightseagreen;
+            text-align: center;
+            text-decoration: underline;
+            display: none;
+            font-style: oblique;
+        }
+    </style>
+</head>
+
+<body>
+    <script>
+        $(document).ready(function() {
+            $('#flip').click(function() {
+                $('#panel').slideDown(1000)
+            });
+            $('#Stop').click(function() {
+                $('#panel').stop();
+            });
+        });
+    </script>
+    <div id="flip">Click Here and see the Magic</div>
+    <div id="panel">Life is Beautiful.</div>
+    <button id="Stop">Stop This.</button>
+</body>
+
+</html>

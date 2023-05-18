@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Document</title>
+    <script src="jq.js"></script>
+    <style>
+        #a {
+            border: 1px solid palevioletred;
+            width: 200px;
+            height: 200px;
+            color: brown;
+            background-color: beige;
+        }
+        /*         
+        #b {
+            border: 1px solid palevioletred;
+            width: 100px;
+            height: 100px;
+            color: brown;
+        }
+        
+        #c {
+            border: 1px solid palevioletred;
+            width: 100px;
+            height: 100px;
+            color: brown;
+        } */
+    </style>
+</head>
+
+<body>
+    <script>
+        $(document).ready(function() {
+            $('#hide').click(function() {
+                $('#a').hide()
+            });
+        });
+        $(document).ready(function() {
+            $('#show').click(function() {
+                $('#a').show()
+            });
+        });
+        $(document).ready(function() {
+            $('#a').dblclick(function() {
+                $('#a').css('color', 'green')
+            });
+        });
+    </script>
+    <div id="a">
+        <p>Money allows us to meet our basic needs—to buy food and shelter and pay for healthcare. </p>
+    </div>
+    <!-- <div id="b">
+        <p>Money allows us to meet our basic needs—to buy food and shelter and pay for healthcare. Meeting these needs is essential, and if we don't have enough money to do so, our personal wellbeing and the wellbeing of the community as a whole suffers
+            greatly.
+        </p>
+    </div>
+    <div id="c">
+        <p>Money allows us to meet our basic needs—to buy food and shelter and pay for healthcare. Meeting these needs is essential, and if we don't have enough money to do so, our personal wellbeing and the wellbeing of the community as a whole suffers
+            greatly.
+        </p>
+    </div> -->
+    <button id="hide">Hide</button>
+    <button id="show"> Show</button>
+</body>
+
+</html>
